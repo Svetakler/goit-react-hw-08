@@ -52,3 +52,19 @@
 .deleteButton:hover {
   background-color: #d32f2f;
 }
+@media (max-width: 600px) {
+  .contactItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactDetails {
+    width: 100%;
+    display: block;
+  }
+
+  .deleteButton {
+    width: 100%;
+    margin-left: 0;
+  }
+}
