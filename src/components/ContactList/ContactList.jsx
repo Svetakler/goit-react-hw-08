@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteContact } from "../../redux/contacts/operations";
-import { getFilter } from "../../redux/filters/selectors";
+import { selectNameFilter } from "../../redux/filters/selectors";
 import { FaUserAlt, FaPhoneAlt } from "react-icons/fa";
 import css from "./ContactList.module.css";
 
 const ContactList = () => {
   const contacts = useSelector((state) => state.contacts.items);
-  const filter = useSelector(getFilter);
+  const filter = useSelector(selectNameFilter);
   const dispatch = useDispatch();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
