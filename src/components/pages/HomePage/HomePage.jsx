@@ -9,7 +9,7 @@ const HomePage = () => {
 
       <div className={css.imageContainer}>
         <img
-          src={"../../../../public/img/cat.png"}
+          src={"/img/cat.png"}
           loading="lazy"
           alt="A greeting"
           className={css.image}
