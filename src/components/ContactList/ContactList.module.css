@@ -1,15 +1,49 @@
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
+.contactItem {
+  width: 500px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.contactDetails {
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
 
-.message {
-  font-size: 18px;
+.icon {
+  font-size: 20px;
+  color: #4caf50; /* Зелені іконки */
+}
+
+.contactName {
+  color: blue;
+  padding-top: 20px;
   font-weight: bold;
-  text-align: center;
+  font-size: 26px;
+}
+
+.contactNumber {
+  padding-top: 20px;
+  font-size: 26px;
   color: #555;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
 }

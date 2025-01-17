@@ -1,0 +1,16 @@
+.contactItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.contactItem button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contactItem button:hover {
+  background-color: darkred;
+}

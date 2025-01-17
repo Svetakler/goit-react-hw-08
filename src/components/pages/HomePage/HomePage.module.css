@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
