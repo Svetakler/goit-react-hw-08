@@ -5,21 +5,30 @@
 }
 
 .link {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
   text-decoration: none;
-  color: #007bff;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
+  background-color: #4caf50;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .link:hover {
-  background-color: #007bff;
-  color: white;
+  background-color: #45a049;
+  transform: scale(1.05);
 }
 
 .activeLink {
-  background-color: #007bff;
-  color: white;
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  background-color: #388e3c;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 90%; /* Відносна ширина для мобільних пристроїв */
+  width: 90%;
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -60,31 +60,30 @@
   margin-bottom: 10px;
 }
 
-/* Адаптивні стилі */
 @media (max-width: 768px) {
   .form {
-    width: 100%; /* Займає всю ширину екрану */
+    width: 100%;
     padding: 15px;
   }
 
   .label {
-    font-size: 14px; /* Менший шрифт на менших екранах */
+    font-size: 14px;
   }
 
   .input {
-    font-size: 12px; /* Менший шрифт для полів вводу */
+    font-size: 12px;
     padding: 10px;
   }
 
   .button {
-    font-size: 14px; /* Зменшення шрифту кнопки */
+    font-size: 14px;
     padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .form {
-    padding: 10px; /* Менші відступи для мобільних пристроїв */
+    padding: 10px;
   }
 
   .label {

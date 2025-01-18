@@ -42,8 +42,8 @@ const ContactList = () => {
   const filteredContacts = getFilteredContacts();
 
   return (
-    <div>
-      <ul>
+    <div className={css.contactsWrapper}>
+      <ul className={css.contactsContainer}>
         {filteredContacts.map((contact) => (
           <li key={contact.id} className={css.contactItem}>
             <div className={css.contactDetails}>
@@ -73,8 +73,18 @@ const ContactList = () => {
           <div className={css.modal}>
             <h3>Are you sure you want to delete this contact?</h3>
             <div>
-              <button onClick={handleConfirmDelete}>Yes</button>
-              <button onClick={handleCancelDelete}>No</button>
+              <button
+                className={`${css.modalButton} ${css.confirmButton}`}
+                onClick={handleConfirmDelete}
+              >
+                Yes
+              </button>
+              <button
+                className={`${css.modalButton} ${css.cancelButton}`}
+                onClick={handleCancelDelete}
+              >
+                No
+              </button>
             </div>
           </div>
         </div>

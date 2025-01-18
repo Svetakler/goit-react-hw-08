@@ -1,6 +1,23 @@
-.contactItem {
+.contactsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contactsContainer {
   width: 100%;
-  max-width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.contactItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,8 +25,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: #f9f9f9;
-  box-sizing: border-box;
+  background-color: white;
 }
 
 .contactDetails {
@@ -19,82 +35,34 @@
 }
 
 .icon {
-  font-size: 25px;
+  font-size: 20px;
   color: #4caf50;
 }
 
 .contactName {
-  margin-left: 5px;
-  color: rgb(30, 30, 33);
-  padding-top: 10px;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 18px;
+  color: rgb(30, 30, 33);
 }
 
 .contactNumber {
-  margin-left: 5px;
-  padding-top: 10px;
-  font-size: 26px;
+  font-size: 16px;
   color: #555;
 }
 
 .deleteButton {
-  margin-right: 10px;
   background-color: #f44336;
   color: white;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
 }
 
 .deleteButton:hover {
   background-color: #d32f2f;
 }
 
-/* Адаптивні стилі */
-@media (max-width: 768px) {
-  .contactItem {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
-
-  .contactDetails {
-    gap: 5px;
-  }
-
-  .contactName,
-  .contactNumber {
-    font-size: 20px;
-  }
-
-  .deleteButton {
-    width: 100%;
-    font-size: 12px;
-    padding: 8px 10px;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .contactItem {
-    padding: 10px;
-  }
-
-  .contactName,
-  .contactNumber {
-    font-size: 18px;
-  }
-
-  .deleteButton {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
-
-/* Стилі для модальних вікон */
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -113,7 +81,7 @@
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
-  width: 90%; /* Адаптивна ширина */
+  width: 90%;
   box-sizing: border-box;
   text-align: center;
 }
@@ -123,32 +91,41 @@
   font-size: 18px;
 }
 
-.modal button {
+.modalButton {
   margin: 10px;
   padding: 10px 20px;
-  background-color: #f44336;
-  color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer;
 }
 
-.modal button:hover {
+.confirmButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.confirmButton:hover {
+  background-color: #388e3c;
+}
+
+.cancelButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancelButton:hover {
   background-color: #d32f2f;
 }
 
-@media (max-width: 480px) {
-  .modal {
+@media (max-width: 768px) {
+  .contactsContainer {
+    max-height: 300px;
+  }
+
+  .contactItem {
+    flex-direction: column;
+    align-items: flex-start;
     padding: 15px;
-  }
-
-  .modal h3 {
-    font-size: 16px;
-  }
-
-  .modal button {
-    padding: 8px 15px;
-    font-size: 14px;
   }
 }
