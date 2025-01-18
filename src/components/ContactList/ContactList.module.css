@@ -52,22 +52,49 @@
 .deleteButton:hover {
   background-color: #d32f2f;
 }
-@media (max-width: 600px) {
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
   .contactItem {
     flex-direction: column;
     align-items: flex-start;
+    padding: 15px;
   }
 
   .contactDetails {
-    width: 100%;
-    display: block;
+    gap: 5px;
+  }
+
+  .contactName,
+  .contactNumber {
+    font-size: 20px;
   }
 
   .deleteButton {
     width: 100%;
-    margin-left: 0;
+    font-size: 12px;
+    padding: 8px 10px;
+    margin-right: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .contactItem {
+    padding: 10px;
+  }
+
+  .contactName,
+  .contactNumber {
+    font-size: 18px;
+  }
+
+  .deleteButton {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Стилі для модальних вікон */
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -86,13 +113,14 @@
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
-  width: 100%;
+  width: 90%; /* Адаптивна ширина */
   box-sizing: border-box;
   text-align: center;
 }
 
 .modal h3 {
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .modal button {
@@ -108,4 +136,19 @@
 
 .modal button:hover {
   background-color: #d32f2f;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 15px;
+  }
+
+  .modal h3 {
+    font-size: 16px;
+  }
+
+  .modal button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
 }
